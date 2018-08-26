@@ -1,0 +1,98 @@
+.style {
+	font-family: Arial, Helvetica sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin-top: 15px;
+	margin-bottom: 60px;
+	font-size: 1.75em;
+	text-align: center;
+}
+
+.intro {
+	margin-top: 20px;
+	padding: 30px
+}
+
+#p1, #p2, #p3 {
+	width: 150px;
+	height: 35px;
+	border: 1.5px solid black;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	line-height: 35px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#p1 {
+	background-color: pink;
+}
+
+#p2 {
+	color: white;
+	background-color: red;
+}
+
+#p3 {
+	background-color: yellow;
+}
+
+.row {
+	width: 100%;
+}
+
+@media (min-width: 992px) {
+	.col-lg-4 {
+		width: 29.33%;
+		height: 200px;
+		background-color: gray;
+		border: 2px solid black;
+		margin: 2%;
+		position: relative;
+		float: left;
+		overflow: auto;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.col-md-6, .col-md-12 {
+		height: 200px;
+		background-color: gray;
+		border: 2px solid black;
+		margin: 2%;
+		position: relative;
+		float: left;
+		overflow: auto;
+	}
+
+	.col-md-6 {
+		width: 46%;
+	}
+
+	.col-md-12 {
+		width: 96%;
+	}
+}
+
+@media (max-width: 767px) {
+	.col-sm-12 {
+		width: 96%;
+		height: 200px;
+		background-color: gray;
+		border: 2px solid black;
+		margin: 2%;
+		position: relative;
+		float: left;
+		overflow: auto;
+	}
+}
